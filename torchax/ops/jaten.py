@@ -5733,6 +5733,7 @@ mutation_ops_to_functional = {
   torch.ops.aten.floor_divide_: op_base.InplaceOp(torch.ops.aten.floor_divide),
   torch.ops.aten.remainder_: op_base.InplaceOp(torch.ops.aten.remainder),
   torch.ops.aten.index_put_: op_base.InplaceOp(torch.ops.aten.index_put),
+  torch.ops.aten.masked_scatter_: op_base.InplaceOp(torch.ops.aten.masked_scatter),
 }
 
 # Note: tuple comparisons work intuitively, e.g. `_jax_version >= (0, 4, 32)`.
